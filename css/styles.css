@@ -1,0 +1,459 @@
+/* ---------------------------------------------Mike Lalonde -------------------------------------------------------*/
+/* --------------------------------------------Online Portfolio  ---------------------------------------------------*/
+/* -----------------------------------------------16 12 2020 -----------------------------------------------------*/
+/* --------------------------------------------Updated  08 11 2021 -----------------------------------------------*/
+*
+
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  /* font-family: 'Roboto', sans-serif;
+  font-family: */
+}
+.pImg
+{
+  position: absolute;
+  left: 10px;
+  width: 80px;
+  height: 80px; 
+}
+section
+{
+  padding: 100px;
+}
+.banner
+{
+  position: relative;
+  min-height: 100vh;
+  background-image: url('/img/img16.jpg');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner h2
+{
+  font-size: 3em;
+  color: rgb(33, 160, 115);
+  font-weight: 500;
+  line-height: 1.5em;
+}
+.banner h2 span
+{
+  background: linear-gradient(to top,rgb(3,80, 3), #02fabc);
+  background-clip:text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.banner h3
+{
+  font-size: 1.5em;
+  color: rgb(33, 160, 115);
+  font-weight: 500;
+}
+.btn
+{
+  position: relative;
+  background: rgb(105, 109, 117);
+  display: inline-block;
+  color: rgb(17, 201, 33);
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  Letter-spacing: 2px;
+  font-weight: 500;
+}
+header{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+header.sticky
+{
+  background: #fff;
+  box-shadow: 12px 30px rgb(0, 0, 0, 0.3);
+}
+header .logo
+{
+  background: linear-gradient(to top,rgb(19, 80, 59), #02fabc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+  
+}
+header .sticky .logo
+{
+  color: #111;
+}
+header ul 
+{
+  position: relative;
+  display: flex;
+}
+header ul li
+{
+  position: relative;
+  list-style: none;
+}
+header ul li a
+{
+  position: relative;
+  display: inline-block;
+  margin: 0px 15px;
+  background: linear-gradient(to top,rgb(19, 80, 59), #02fabc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  background-clip: text;
+  
+}
+header .sticky ul li a
+{
+color: #111;
+}
+.heading 
+{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111;
+}
+.heading h2
+{
+  font-weight: 600;
+  font-size: 30px;
+}
+.content
+{
+  display: flex;
+  justify-content: space-between;
+}
+.contentbox
+.contentbox h3
+{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.w50
+{
+  min-width: 50%;
+  line-height: 1.2em;
+  padding-right: 10px;
+}
+img
+{
+  max-width: 100%;
+}
+.skillsSet 
+{
+  background: #111;
+}
+.heading.white
+{
+  color: rgb(20, 99, 71);
+}
+.skillsSet .content
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.skillsSet .content .skillsSetbox
+{
+  padding: 40px 20px;
+  background: #222;
+  background-color: rgb(20, 99, 71);
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+.skillsSet .content .skillsSetbox:hover
+{
+  background: rgb(3, 180, 3);
+}
+.skillsSet .content .skillsSetbox img
+{
+  max-width: 80px;
+  filter:invert(1);
+}
+.skillsSet .content .skillsSetbox h2
+{
+  font-size: 20px;
+  font-weight: 600;
+}
+#textContainer
+{
+  background-size: cover;
+  font-size: 2.2vh;
+  /* opacity: 0.95; */
+  color: rgb(223, 219, 7);
+ 
+}
+.goal 
+{ 
+  background-image: url('/img/img8.jpg');
+  margin-left: 50px; 
+  background-size:cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  padding-bottom: 0px; 
+}
+
+.shortTerm
+{
+  padding-left: 50px;
+}
+.longTerm
+{ 
+  padding-left: 50px
+}
+.goal .content
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;  
+}
+.goal .content .goalbox 
+{
+  width: auto;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.goal .content .goalbox img
+{
+  max-width: 20px;
+  max-height: 20px;
+  vertical-align: middle;
+}
+#resume{
+  text-align: center;
+}
+.resume .content
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.resume .content .resumebox
+{
+  max-width: calc(100% - 40px);
+  padding: 60px 40px;
+  margin: 80px;
+  background: #0c531b;
+  box-shadow: 10px 10px rgba(21, 126, 12, 0.5);
+}
+/* ResumeGrids style overrides -- */
+.resume-b
+{ 
+  font-family: Georgia;
+ } 
+#innerResume 
+{ padding: 10px 80px; 
+  margin: 80px auto; 
+  background: #2a9908; 
+  border: solid rgb(17, 70, 42); 
+  border-width: 8px 0 2px 0; 
+}
+.resumeGrid
+{ 
+  margin-bottom: 2em; 
+  padding-bottom: 2em; 
+  border-bottom: 1px solid rgb(17, 70, 42); 
+}
+
+/* //-- header, body, footer -- */
+#hd 
+{ 
+  margin: 2.5em 0 3em 0; 
+  padding-bottom: 1.5em; 
+  border-bottom: 1px solid rgb(13, 124, 18) 
+}
+#hd h2 
+{ text-transform: uppercase; 
+  letter-spacing: 2px; 
+}
+#bd, #ft 
+{ 
+  margin-bottom: 2em; 
+}
+
+/* //-- footer -- */
+#ft 
+{ 
+  padding: 1em 0 5em 0; 
+  font-size: 92%; 
+  border-top: 1px solid rgb(17, 70, 42);
+  text-align: center; 
+}
+#ft p 
+{ 
+  margin-bottom: 0; 
+  text-align: center;   
+}
+#hd h1 
+{ 
+  font-size: 40px; 
+  text-transform: uppercase; 
+  letter-spacing: 3px; 
+}
+h2 
+{ 
+  font-size: 125% 
+}
+h3, h4 
+{
+  font-size: 110%; 
+}
+ p  
+{ 
+  font-size: 100%; 
+  line-height: 18px; 
+  padding-right: 3em; 
+}
+a 
+{ 
+  color: #3058a3 
+}
+a:hover 
+{ 
+  text-decoration: none;
+}
+strong 
+{ 
+  font-weight: bold; 
+}
+li 
+{
+   line-height: 24px; border-bottom: 1px solid #ccc; 
+}
+p.enlarge 
+{ 
+  font-size: 144%; padding-right: 6.5em; line-height: 24px; 
+}
+p.enlarge span 
+{ 
+  color: #000 
+}
+.contact-info 
+{ 
+  margin-top: 7px; 
+}
+.first h2 
+{ 
+  font-style: italic; 
+}
+.last 
+{ 
+  border-bottom: 0 
+} 
+.contact
+{
+  background: #111;
+}
+.formbox
+{
+  min-width: 60%;
+}
+.formbox form
+{
+  display: flex;
+  flex-direction: column;
+}
+.formbox form h3,
+.contactInfo h3
+{
+  color:  rgb(20, 99, 71);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.formbox form input,
+.formbox form textarea
+{
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #fff;
+  resize: none
+}
+.formbox form textarea
+{
+  min-height: 225px;
+}
+.formbox form input::placeholder,
+.formbox form textarea::placeholder
+{
+  color: rgb(20, 99, 71);
+}
+.formbox form input[type="submit"]
+{
+  max-width: 100px;
+  background :rgb(20, 99, 71);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.contactInfo
+{
+  max-width: 40%;
+}
+.contactInfobox
+{
+  position: relative;
+}
+.contactInfobox .box
+{
+  display: flex;
+  position: relative;
+  padding: 20px 0px;
+}
+.contactInfobox .box .icon
+{
+  display: flex;
+  min-width: 40%;
+  padding-top: 4px;
+  color: rgb(3, 180, 3);
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 24px;
+}
+.contactInfobox .box .text
+{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(3, 180, 3);
+}
+.contactInfobox .box .text h3
+{
+  font-weight: 500;
+  margin-bottom: 0px;
+}

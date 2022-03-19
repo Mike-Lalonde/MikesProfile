@@ -1,0 +1,149 @@
+/* ---------------------------------------------Mike Lalonde -------------------------------------------------------*/
+/* --------------------------------------------Online Portfolio  ---------------------------------------------------*/
+/* -----------------------------------------------16 12 2020 -------------------------------------------------------*/
+/* ---------------------------------------max width of 600px -------------------------------------------------------*/
+@media (max-width: 600px)
+{
+  header,  header.sticky
+  {
+    padding: 20px 50px;
+    z-index: 1000;
+  }
+  .banner
+  {
+    padding: 150px 20px 100px;
+  }
+  /* .goal
+  {
+  
+  } */
+}
+
+/* -------------------------------------- max width of 991 px---------------------------------------------------------- */
+@media (max-width: 991px)
+{
+  header , header.sticky
+  {
+    padding: 20px 20px;
+    z-index: 1000;
+  }
+  .pImg
+{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  
+}
+  .menu
+  {
+    display: block;
+    position: fixed;
+    padding: 100px 50px;
+    top: 75px;
+    left:-100%;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 7, 3);
+    transition: 0.5s;
+    z-index: 999;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .menu.active
+  {
+    left: 0%;
+  }
+  header ul li a 
+  {
+    color: #111;
+    font-size: 24px;
+    margin: 10px;
+  }
+  .toggle
+  {
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background: url(menu.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+  .toggle.active
+  {
+    width: 40px;
+    height: 40px;
+    background: url('./img/close.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer; 
+  }
+  header.sticky .toggle
+  {
+    filter: invert(1);
+  }
+  section
+  {
+    padding: 100px 50px;
+  }
+  .banner
+  {
+    padding: 150px 50px 100px;
+  }
+  .banner h2
+  {
+    font-size: 1.5em;
+  }
+  .banner h3
+  {
+    font-size: 1em;
+  }
+  .btn
+  {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .heading h2
+  {
+   font-size: 24px;
+  }
+  .contextbox h3
+  {
+    font-size: 20px;
+  }
+  .content
+  {
+    flex-direction: column;
+  }
+  .w50 
+  {
+    min-width: 50%;
+    margin-bottom: 20px;
+  }
+  .goal .content .goalbox
+  {
+    margin: 10px;
+  }
+  .goal .goalPic img 
+  {
+    max-height: 500px;
+    z-index: 200;
+  }
+  .goal .content 
+  {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+  }
+  .resume{
+    display:none;
+  }
+  .contactInfo 
+  {
+    margin: 20px 0px;
+  }
+}
+/* ----------------------------------------------min Width 1260 ----------------------------------------------------------------------- */
+/* @media (min-width: 1260px) 
