@@ -27,7 +27,7 @@ section
 {
   position: relative;
   min-height: 100vh;
-  background-image: url('./img/img16.jpg');
+  background-image: url('/img/img16.jpg');
   background-size:contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -213,7 +213,7 @@ img
 }
 .goal 
 { 
-  background-image: url('./img/img8.jpg');
+  background-image: url('/img/img8.jpg');
   margin-left: 50px; 
   background-size:cover;
   background-position: left;
